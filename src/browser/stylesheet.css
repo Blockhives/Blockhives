@@ -1,0 +1,108 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 9, 2019, 2:38:53 PM
+    Author     : Singh
+*/
+
+.tab {
+
+    -fx-pref-width: 250px;
+} 
+.tab-header-background {
+    -fx-background-color:transparent;
+}
+
+.tab-pane{
+    -fx-padding: 0 -1 -1 -1;
+}
+.text-field{
+    -fx-border-radius: 20px;
+    -fx-width:800px;
+}
+
+
+
+/*******************************************************************************
+
+* 					ScrollPane                                 *
+
+******************************************************************************/
+  .scroll-pane .viewport {
+    -fx-background-color: transparent;
+  }
+
+  .scroll-pane {
+	-fx-background-color:transparent;
+  }
+  
+  
+  /* The main scrollbar CSS class of ListView */
+ .scroll-bar:horizontal ,
+  .scroll-bar:vertical{
+    -fx-background-color:rgb(255.0,255.0,255.0,0.8);
+    -fx-cursor: hand ;
+	
+}
+
+/* The increment and decrement button CSS class of scrollbar */
+ .increment-button , .decrement-button {
+    -fx-background-color:transparent;
+	-fx-background-radius: 2.0em;
+	
+	
+}
+
+/* The main scrollbar **track** CSS class  */
+ .scroll-bar:horizontal .track,
+ .scroll-bar:vertical .track{
+	-fx-background-color: #202020;
+	-fx-border-color:black;
+	-fx-opacity:0.9;
+	-fx-background-radius: 2.0em;
+	-fx-border-radius:2.0em;
+}
+
+
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+ .scroll-bar:horizontal .thumb,
+ .scroll-bar:vertical .thumb {
+    -fx-background-color:white;
+	/*-fx-background-insets: 2.0, 0.0, 0.0;*/
+	-fx-background-radius: 2.0em;
+	
+	
+}
+
+/* ------------------------------------------------------------------------------------- */
+/** EVENT CSS **/
+/* ------------------------------------------------------------------------------------- */
+
+/* The main scrollbar **track** CSS class on event of "hover" and "pressed" */
+
+ .scroll-bar:horizontal:hover .track ,
+ .scroll-bar:horizontal:pressed .track ,
+ .scroll-bar:vertical:hover .track,
+ .scroll-bar:vertical:pressed .track{
+     -fx-background-color: #101010;
+	 -fx-opacity: 0.9;
+	/*  -fx-background-radius: 0.0em; */
+    
+}
+
+/* The main scrollbar **thumb** CSS class on event of "hover" and "pressed" */
+ .scroll-bar .thumb:hover,
+ .scroll-bar .thumb:pressed{
+    -fx-background-color: white;
+}
+
+
+ .increment-button:hover , .decrement-button:hover {
+    -fx-background-color:derive(#202020,100.0%);
+	-fx-border-color:derive(#202020,80.0%);	
+	/*-fx-padding:10.0px;*/
+}
